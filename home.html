@@ -18,7 +18,35 @@
 <body>
     <h1>YOU ARE IN.</h1>
 
-    <script src="" async defer></script>
+    <button id="signUserOutButton" type="button">Sign Out</button>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB-DlfjmzdTGMXc8b3wgPvdvP_28QZlGcE",
+            authDomain: "practice-app-4dd49.firebaseapp.com",
+            databaseURL: "https://practice-app-4dd49.firebaseio.com",
+            projectId: "practice-app-4dd49",
+            storageBucket: "",
+            messagingSenderId: "371987962316",
+            appId: "1:371987962316:web:3bade20f9b9402a4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        let database = firebase.database()
+        let auth = firebase.auth()
+    </script>
+
+    <script src="js/home.js" async defer></script>
 </body>
 
 </html>
